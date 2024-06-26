@@ -1,0 +1,17 @@
+-- daily_aggregated_price.sql
+
+{{ config(
+    materialized='table',
+    schema='final'
+) }}
+
+SELECT
+    null as EQUIPMENT_ID,  
+    null as ORIGIN_PID,    
+    null as DESTINATION_PID,  
+    null as day,           
+    null as avg_daily_price,  
+    null as median_daily_price,  
+    null as dq_ok_company,  
+    null as dq_ok_supplier,  
+    null as dq_ok           

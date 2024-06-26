@@ -1,4 +1,4 @@
---daily_prices.sql
+--C:\Users\ZZ00OL808\xeneta_cs\models\staging\4\daily_prices.sql
 {{ config(
     materialized='incremental',
     schema='staging',

@@ -1,4 +1,4 @@
--- datapoint_charges.sql
+-- C:\Users\ZZ00OL808\xeneta_cs\models\staging\2\datapoint_charges.sql
 {{ config(
     materialized='incremental',
     schema='staging',

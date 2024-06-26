@@ -1,4 +1,4 @@
--- datapoints_1.sql
+-- C:\Users\ZZ00OL808\xeneta_cs\models\raw\datapoints_1.sql
 {{ config(
     materialized='incremental',
     schema='raw',

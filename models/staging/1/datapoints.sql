@@ -1,4 +1,4 @@
--- datapoints.sql
+-- C:\Users\ZZ00OL808\xeneta_cs\models\staging\1\datapoints.sql
 {{ config(
     materialized='incremental',
     schema='staging',

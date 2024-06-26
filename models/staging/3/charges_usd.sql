@@ -1,4 +1,4 @@
---charges_usd.sql
+--C:\Users\ZZ00OL808\xeneta_cs\models\staging\3\charges_usd.sql
 {{ config(
     materialized='incremental',
     schema='staging',

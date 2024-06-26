@@ -1,4 +1,4 @@
--- processed_files.sql
+-- C:\Users\ZZ00OL808\xeneta_cs\models\raw\processed_files.sql
 {{ config(materialized='table') }}
 
 SELECT * FROM (

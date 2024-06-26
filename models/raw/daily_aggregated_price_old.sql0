@@ -1,0 +1,18 @@
+-- Create an empty table daily_aggregated_price_old in the final schema
+{{ config(
+    materialized='table',
+    schema='final',
+    alias='daily_aggregated_price_old'
+) }}
+
+CREATE TABLE {{ ref('final.daily_aggregated_price_old') }} (
+    EQUIPMENT_ID bigint,
+    ORIGIN_PID bigint,
+    DESTINATION_PID bigint,
+    day date,
+    avg_daily_price numeric,
+    median_daily_price numeric,
+    dq_ok_company boolean,
+    dq_ok_supplier boolean,
+    dq_ok boolean
+);

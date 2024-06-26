@@ -1,3 +1,4 @@
+--C:\Users\ZZ00OL808\xeneta_cs\models\final\1\daily_aggregated_price.sql
 {{ config(
     materialized='incremental',                  
     schema='final',                             

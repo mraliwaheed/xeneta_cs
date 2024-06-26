@@ -1,4 +1,4 @@
--- models/metadata/data_coverage.sql
+--C:\Users\ZZ00OL808\xeneta_cs\models\final\1\data_coverage.sql
 {{ config(materialized='view', 
     schema = 'final' ) }}
 
