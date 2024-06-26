@@ -1,4 +1,4 @@
--- staging_charges_usd.sql
+--charges_usd.sql
 {{ config(
     materialized='incremental',
     schema='staging',

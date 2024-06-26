@@ -1,4 +1,4 @@
--- staging_datapoints.sql
+-- datapoints.sql
 {{ config(
     materialized='incremental',
     schema='staging',

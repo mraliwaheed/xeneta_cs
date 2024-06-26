@@ -1,11 +1,9 @@
--- daily_aggregated_price.sql
 {{ config(
-    materialized='incremental',
-    schema='final',
-    unique_key='equipment_id, ORIGIN_PID, DESTINATION_PID, day'
+    materialized='incremental',                  
+    schema='final',                             
+    unique_key='equipment_id, ORIGIN_PID, DESTINATION_PID, day'  
 ) }}
 
--- for incremental model, only new records are inserted with company and supplier checks
 WITH aggregated_data AS (
     SELECT
         equipment_id,

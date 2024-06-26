@@ -33,11 +33,13 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   xeneta_cs:
     # Config indicated by + and applies to all files under models/example/
-    example:
-      +materialized: view
+    #example:
+     # +materialized: view
     raw:
       +schema: raw
     staging:
       +schema: staging
     final:
-      +schema: final  
+      +schema: final 
+      
+      

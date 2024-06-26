@@ -1,4 +1,4 @@
--- staging_datapoint_charges.sql
+-- datapoint_charges.sql
 {{ config(
     materialized='incremental',
     schema='staging',
