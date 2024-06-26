@@ -1,0 +1,8 @@
+{{ config(
+    materialized='table',
+    schema='final'
+) }}
+
+-- Create final.prices_all table from final.daily_aggregated_prices
+SELECT * 
+FROM {{ ref('daily_aggregated_prices') }}

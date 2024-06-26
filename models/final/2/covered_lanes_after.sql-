@@ -1,0 +1,14 @@
+-- covered_lanes_after.sql
+{{ config(
+    materialized='table',
+    schema='final'
+) }}
+
+with covered_lanes_after as (
+    select
+        count(distinct concat(ORIGIN_PID, '_', destination_pid, '_', EQUIPMENT_ID, '_', date_trunc('day', created))) as covered_lanes_after_count
+    from {{ ref('daily_aggregated_price') }}
+    where dq_ok = true
+)
+
+select * from covered_lanes_after;

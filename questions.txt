@@ -1,0 +1,13 @@
+first time load all data from raw,staging and final
+2 when new data comes only run incremental model, this will add all new  data and on final step creating a final table we can check the requiremnt in query where you only want to see that 
+In particular: _we should only show aggregated price values if we have at least 5 different companies and 2 different suppliers providing data on the given lane, with given equipment type_ .
+
+
+---------------------------
+
+
+but keeping the above thing in mind how we cna check that if dolor price changes increase or decrease but the above critera doesnt fullfil then what, so there should be a new process to updated final table prices
+
+
+----------------------
+i also want to keep the file name for future back tracking and datetime column of imported

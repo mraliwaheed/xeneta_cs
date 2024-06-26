@@ -1,0 +1,9 @@
+duckdb xeneta.duckdb
+.open xeneta.duckdb
+
+
+SELECT * FROM raw.ports;
+SELECT * FROM raw.regions;
+SELECT * FROM raw.exchange_rates;
+SELECT * FROM raw.datapoints_1;
+SELECT * FROM raw.charges_1;
